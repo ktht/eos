@@ -103,7 +103,7 @@ if (NOT PACKAGEONLY)
   include(EosCompileFlags)
 endif()
 
-set(CMAKE_INSTALL_SYSCONFDIR /etc)
+set(CMAKE_INSTALL_SYSCONFDIR "/etc" CACHE PATH "")
 include(EosFindLibs)
 
 #-------------------------------------------------------------------------------
