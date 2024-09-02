@@ -114,7 +114,7 @@ int main(int argc, char* argv[])
 
   auto start_time = std::chrono::steady_clock::now();
   google::protobuf::util::JsonPrintOptions options;
-  options.always_print_primitive_fields = true;
+  options.always_print_fields_with_no_presence = true;
   options.add_whitespace = true;
   std::string jsonstring;
   eos::rpc::NsStatRequest request;
