@@ -11,6 +11,7 @@ if(NOT Python3_Interpreter_FOUND)
   return()
 else()
   set(PYTHONSITEPKG_FOUND TRUE)
+  set(PYTHON_VERSION "${Python3_VERSION_MAJOR}.${Python3_VERSION_MINOR}")
 endif()
 
 if(Python3_SITELIB)
